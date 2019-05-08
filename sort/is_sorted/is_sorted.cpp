@@ -17,9 +17,9 @@ int is_sorted_fine(int *array, int length)
 {
     int index;
 
-    for (index = 0; index < length -1 ;)
+    for (index = 0; index < length -1; )
     {
-        if (array[index] > array[++index])
+        if (array[index++] > array[index])
         {
             return 0;
         }
