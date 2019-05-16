@@ -25,22 +25,31 @@ def prob_ABC(total_mine):
     # print(P2,P3)
     P = [P2*TWO_PRO[i] + P3*THREE_PRO[i] for i in range(3)]
     # print(P)
+    P.append(P2)
+    P.append(P3)
     return P
 
 nn = list(range(2,OUT_ROI + 3))
 PA = []
 PB = []
 PC = []
+P2 = []
+P3 = []
 for i in nn:
-    pa, pb, pc = prob_ABC(i)
+    pa, pb, pc,p2,p3 = prob_ABC(i)
     PA.append(pa)
     PB.append(pb)
     PC.append(pc)
+    P2.append(p2)
+    P3.append(p3)
+
 plt.plot(nn,PA)
 plt.plot(nn,PB)
 plt.plot(nn,PC)
+plt.plot(nn,P2)
+plt.plot(nn,P3)
 plt.xlabel('Number of Mines')
 plt.ylabel('Probability')
-plt.legend(['P(A)','P(B)','P(C)'])
+plt.legend(['P(A)','P(B)','P(C)','P(n=2)','P(n=3)'])
 plt.savefig('probability.png')
 plt.show()
