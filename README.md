@@ -1,2 +1,5 @@
-# awesome-algorithms
-Some basic or interesting algorithms implemented with different program language.
+# Code Katas
+
+The word Kata is from 《Clean Coder》.
+
+

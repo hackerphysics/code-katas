@@ -34,17 +34,17 @@ def max_diff_index(arr):
 
 import random
 a = [2]
-search(a)
+max_diff_index(a)
 a = [-1,2,3,-2,5]
-search(a)
+max_diff_index(a)
 random.seed(1)
 a = [ random.randint(-10,10) for i in range(10)]
-search(a)
+max_diff_index(a)
 a = [ random.randint(-10,10) for i in range(10)]
-search(a)
+max_diff_index(a)
 a = [ random.randint(-10,10) for i in range(10)]
-search(a)
+max_diff_index(a)
 a = [ random.randint(-10,10) for i in range(20)]
-search(a)
+max_diff_index(a)
 a = [ random.randint(-10,10) for i in range(20)]
-search(a)
+max_diff_index(a)
